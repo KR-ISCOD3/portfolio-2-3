@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>My Portfolio</title>
+
+    <!-- ----------------- LINK CSS------------------- -->
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <!-- ----------------- LINK CSS------------------- -->
+
+    <!-- ----------------- Other Link--CSS----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ----------------- Other Link--CSS----------------- -->
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <img src="./image/logo.png" alt="" />
+        </div>
+
+        <ul class="menu-flex">
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <!-- update 19-jun-25 -->
+        <button id="togglemenu">
+          <i class="bi bi-list" id="menubtn"></i>
+          <i class="bi bi-x-lg unactive" id="closebtn"></i>
+        </button>
+
+        <ul id="menu" class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div data-aos="fade-up" class="title">
+          <div class="text-content">
+            <h1>Rak <span>Smey</span></h1>
+            <p>
+                I am a Full Stack Web Developer at heart and produce features
+                that are best suited for the job at hand.               
+            </p>
+            <ul class="skills">
+              <li>UX/UI Desginer</li>
+              <li>Frontend</li>
+              <li>Backend</li>
+            </ul>
+
+            <div class="socail-media">
+              <a href="https://web.facebook.com/rak.smey.155354">
+                <button>
+                  <i class="bi bi-facebook"></i>
+                </button>
+              </a>
+              <a href="https://www.youtube.com/@learnCO10/videos">
+                <button>
+                  <i class="bi bi-youtube"></i>
+                </button>
+              </a>
+              <a href="https://www.linkedin.com/in/rak-smey-4a93302a4/">
+                <button>
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/KR-ISCOD3">
+                <button>
+                  <i class="bi bi-github"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" class="image">
+          <div class="profile">
+            <img src="./image/pf.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <section data-aos="fade-up" id="about" class="about">
+        <div class="image">
+          <img src="./image/pf2.png" alt="">
+        </div>
+        <div data-aos="fade-up" class="text-content">
+          <h3>About Me</h3>
+          <h1>Creative Frontend with Modern Technolgy</h1>
+          <p class="text-top">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's .
+          </p>
+          <p class="text-buttom">
+            Sed pretium arcu rhoncus risus aliquet, 
+            at scelerisque diam commodo. Nam nec egestas 
+            ante. Duis pulvinar tincidunt sem et aliquam. 
+            Vivamus ut vehicula erat. Duis hendrerit velit non malesuada posuere.
+          </p>
+          <button>
+            Download CV
+          </button>
+        </div>
+      </section>
+
+      <section data-aos="fade-up" class="mydata">
+          <div class="projectcount">
+            <h1>129</h1>
+            <p>PROJECTS DONE</p>
+          </div>
+          <div class="projectcount">
+            <h1>222</h1>
+            <p>CLIENTS</p>
+          </div>
+          <div class="projectcount">
+            <h1>2000</h1>
+            <p>REVIEWS</p>
+          </div>
+          <div class="projectcount">
+            <h1>90</h1>
+            <p>AWARD</p>
+          </div>
+      </section>
+
+      <section data-aos="fade-up" class="service">
+          <h3>Service</h3>
+          <h1>I Provide The Best Solution</h1>
+          <div class="row">
+
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconuxui.png" alt="">
+                <h3>UX / UI Designer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconfrontedn.png" alt="">
+                <h3>Web Designer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconbackend.png" alt="">
+                <h3>Backend Developer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconuxui.png" alt="">
+                <h3>UX / UI Designer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconfrontedn.png" alt="">
+                <h3>Web Designer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content-service">
+                <img width="50px" src="./image/iconbackend.png" alt="">
+                <h3>Backend Developer</h3>
+                <p>
+                  Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. 
+                  Aut ab vitae veniam porro quisquam 
+                  mollitia nisi doloremque animi a 
+                  dolores eos labore asperiores dicta 
+                  iste, provident harum, id, quidem adipisci.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+
+      <section data-aos="fade-up" class="client">
+        
+        <h3>Testimonials</h3>
+        <h1>What Clients Say</h1>
+
+        <div class="row">
+
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="./image/pf2.png" alt="">
+                <div class="text">
+                  <h2>John Cna</h2>
+                  <p> UX / UI Designer</p>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. 
+                Aut ab vitae veniam porro quisquam 
+                mollitia nisi doloremque animi a 
+                dolores eos labore asperiores dicta 
+                iste, provident harum, id, quidem adipisci.
+              </p>
+            </div>
+          </div>
+         
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="./image/pf2.png" alt="">
+                <div class="text">
+                  <h2>John Cna</h2>
+                  <p> UX / UI Designer</p>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. 
+                Aut ab vitae veniam porro quisquam 
+                mollitia nisi doloremque animi a 
+                dolores eos labore asperiores dicta 
+                iste, provident harum, id, quidem adipisci.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="./image/pf2.png" alt="">
+                <div class="text">
+                  <h2>John Cna</h2>
+                  <p> UX / UI Designer</p>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. 
+                Aut ab vitae veniam porro quisquam 
+                mollitia nisi doloremque animi a 
+                dolores eos labore asperiores dicta 
+                iste, provident harum, id, quidem adipisci.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section data-aos="fade-up" class="blog">
+        
+        <h3>Blog</h3>
+        <h1>Latest News From Blog</h1>
+
+        <div class="row">
+
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="https://scontent.fpnh2-3.fna.fbcdn.net/v/t39.30808-6/480694431_635240426114072_2565166773688683705_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGLoUhk0byTKxZx5_qyw3-xaGL0pYbySchoYvSlhvJJyGVDyYOfm7TbW1irFZ3_z6_ySaCA4DJVXjHBQvXL_xzr&_nc_ohc=xcn1x3EYctgQ7kNvwGDBxuw&_nc_oc=AdnyuJnpby4W1ffzS_auFGqjmJ1vz1i_aBBTbuROYuStcr8k8Q-NujgYS-DQ8tEyjCk&_nc_zt=23&_nc_ht=scontent.fpnh2-3.fna&_nc_gid=87Cbt0FYHjWRJdIQmDE6dQ&oh=00_AfOekU5aiQbOqkLodnbM0A0tUyjaa9pjDm6VPdM9NhrYXA&oe=686C00C3" alt="">
+              </div>
+
+              <div class="body">
+                <h3>Join Music Clud</h3>
+                <div class="lotime">
+                  <i class="bi bi-geo-fill"></i>
+                  <p>RUPP</p>
+                  &emsp;
+                  <i class="bi bi-calendar"></i>
+                  <p>Dec 01,2023</p>
+                </div>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, 
+                  adipisicing elit. Qui dolorum 
+                  cumque aliquid, facere officia non.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="https://scontent.fpnh2-3.fna.fbcdn.net/v/t39.30808-6/480694431_635240426114072_2565166773688683705_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGLoUhk0byTKxZx5_qyw3-xaGL0pYbySchoYvSlhvJJyGVDyYOfm7TbW1irFZ3_z6_ySaCA4DJVXjHBQvXL_xzr&_nc_ohc=xcn1x3EYctgQ7kNvwGDBxuw&_nc_oc=AdnyuJnpby4W1ffzS_auFGqjmJ1vz1i_aBBTbuROYuStcr8k8Q-NujgYS-DQ8tEyjCk&_nc_zt=23&_nc_ht=scontent.fpnh2-3.fna&_nc_gid=87Cbt0FYHjWRJdIQmDE6dQ&oh=00_AfOekU5aiQbOqkLodnbM0A0tUyjaa9pjDm6VPdM9NhrYXA&oe=686C00C3" alt="">
+              </div>
+
+              <div class="body">
+                <h3>Join Music Clud</h3>
+                <div class="lotime">
+                  <i class="bi bi-geo-fill"></i>
+                  <p>RUPP</p>
+                  &emsp;
+                  <i class="bi bi-calendar"></i>
+                  <p>Dec 01,2023</p>
+                </div>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, 
+                  adipisicing elit. Qui dolorum 
+                  cumque aliquid, facere officia non.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="content-service">
+              <div class="image">
+                <img src="https://scontent.fpnh2-3.fna.fbcdn.net/v/t39.30808-6/480694431_635240426114072_2565166773688683705_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGLoUhk0byTKxZx5_qyw3-xaGL0pYbySchoYvSlhvJJyGVDyYOfm7TbW1irFZ3_z6_ySaCA4DJVXjHBQvXL_xzr&_nc_ohc=xcn1x3EYctgQ7kNvwGDBxuw&_nc_oc=AdnyuJnpby4W1ffzS_auFGqjmJ1vz1i_aBBTbuROYuStcr8k8Q-NujgYS-DQ8tEyjCk&_nc_zt=23&_nc_ht=scontent.fpnh2-3.fna&_nc_gid=87Cbt0FYHjWRJdIQmDE6dQ&oh=00_AfOekU5aiQbOqkLodnbM0A0tUyjaa9pjDm6VPdM9NhrYXA&oe=686C00C3" alt="">
+              </div>
+
+              <div class="body">
+                <h3>Join Music Clud</h3>
+                <div class="lotime">
+                  <i class="bi bi-geo-fill"></i>
+                  <p>RUPP</p>
+                  &emsp;
+                  <i class="bi bi-calendar"></i>
+                  <p>Dec 01,2023</p>
+                </div>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, 
+                  adipisicing elit. Qui dolorum 
+                  cumque aliquid, facere officia non.
+                </p>
+              </div>
+            </div>
+          </div>
+         
+        
+        </div>
+        
+      </section>
+    </main>
+
+    <footer data-aos="fade-up">
+      <div class="content">
+        <div class="card">
+          <img src="./image/logo.png" alt="" 
+          width="60px" height="60px" 
+          style="border-radius: 50%; object-fit: cover;">
+        </div>
+        <div class="card">
+          <p>Street 4, Komboul</p>
+          <p>Phnom Penh</p>
+        </div>
+        <div class="card">
+          <p>raksmey@gmail.com</p>
+          <p>+855 010 012030230</p>
+        </div>
+        <div class="card">
+          <p>© 2025 by Myself</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script/script.js"></script>
+  </html>

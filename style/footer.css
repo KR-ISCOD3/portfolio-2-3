@@ -1,0 +1,39 @@
+footer{
+    width: 100%;
+    padding: 55px 0;
+    background-color: black;
+}
+footer > .content{
+    width: 95%;
+ margin: auto;
+    /* background-color: red; */
+    color: white;
+    font-size: 20px;
+}
+footer > .content > .card{
+    padding: 10px 0;
+}
+
+
+@media (min-width:768px) {
+    footer > .content{
+        width: 80%;
+        margin: auto;
+    }
+    footer > .content{
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+}
+@media (min-width:1280px) {
+    footer > .content{
+        width: 75%;
+        margin: auto;
+    }
+    footer > .content{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+}

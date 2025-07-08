@@ -1,0 +1,106 @@
+
+/* --------- Start from Screen Mobile --------------  */
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: 0.2s ease-in-out;
+    /* background-color: white; */
+    /* box-shadow: 0 10px 10px rgba(213, 211, 211, 0.393); */
+}
+
+header > nav{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+header > nav > .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: grey;
+}
+header > nav > .logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header > nav > button{
+    font-size: 45px;
+    border: none;
+    background-color: transparent;
+}
+
+/* dropdown menu */
+header > nav > .menu{
+    background-color: var(--main-color-800);
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+header > nav > .menu > li{
+    padding: 10px;
+    text-align: center;
+}
+header > nav > .menu > li > a,
+header > nav > .menu-flex > li > a{
+    color: white;
+    text-decoration: none;
+}
+/* this active for dropdown and toggle in js */
+.active{
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* update 19-jun-25 */
+.unactive{
+    display: none !important;
+}
+
+/* menu-flex menu */
+header > nav > .menu-flex {
+    display: none;
+    list-style: none;
+
+}
+header > nav > .menu-flex > li{
+    padding: 0 10px;
+}
+header > nav > .menu-flex > li > a{
+    color: var(--main-color-900);
+    font-size: clamp(0px,3vw,20px);
+}
+
+/* --------- Start from Screen Taplate and Ipad -------------- */
+@media (min-width:768px) {
+    header > nav{
+        width: 80%;
+    }
+    header > nav > button {
+        display: none;
+    }
+    header > nav > .menu-flex {
+        display: flex;
+    }
+}
+
+/* --------- Start from Screen Laptop -------------- */
+@media (min-width:1280px) {
+    header > nav{
+        width: 75%;
+    }
+    header > nav > .menu-flex > li{
+        padding: 0 20px;
+    }
+}

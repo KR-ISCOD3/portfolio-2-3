@@ -1,0 +1,451 @@
+main{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+}
+main > .hero{
+    width: 95%;
+    /* height: 100%; */
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    padding: 40px 0;
+}
+
+/* screen mobile app */
+main > .hero > .title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    
+}
+main > .hero > .title > .text-content > h1{
+    font-size: clamp(100px,4vw,140px);
+    font-family: "Outfit", sans-serif ;
+    color: white; 
+    text-shadow:
+    -1px -1px 2px black,
+     1px -1px 2px black,
+    -1px  1px 2px black,
+     1px  1px 2px black;
+    line-height: 90px; 
+    
+}
+main > .hero > .title > .text-content > h1 > span{
+    color: var(--main-color-900);
+    text-shadow: none;
+}
+main > .hero > .title > .text-content >  p{
+    font-size: 20px;
+    color: grey;
+    padding-top: 30px;
+    line-height: 30px;
+}
+main > .hero > .title > .text-content >.skills{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: circle ;
+    margin-top: 15px;
+}
+main > .hero > .title > .text-content >.skills > li{
+    margin: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+}
+main > .hero > .title > .text-content > .socail-media{
+    display: flex;
+    margin-top: 20px;
+}
+main > .hero > .title > .text-content > .socail-media > a >button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--main-color-900);
+    border: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+    margin-right: 20px;
+}
+main > .hero > .title > .text-content > .socail-media > a >button:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color-900);
+    color: var(--main-color-900);
+}
+
+main > .hero > .image{
+    /* background-color: green; */
+    display: none;
+    margin-right: 30px;
+}
+main > .hero > .image > .profile{
+    /* background-color: green; */
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    /* background-color: transparent; */
+    box-shadow: 15px 15px 0px rgba(128, 128, 128, 0.375);
+    border: 10px solid var(--main-color-900);
+    padding: 10px;
+    
+}
+main > .hero > .image > .profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+main > .about{
+    padding: 0px 0;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+main > .about >.image{
+    width: 100%;
+    height: 300px;
+}
+main > .about >.image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main > .about >.text-content{
+    width: 100%;
+    padding-top: 20px ;
+    /* background-color: green; */
+}
+main > .about >.text-content > h3{
+    color: grey;
+}
+main > .about >.text-content > h1{
+    padding: 15px 0;
+}
+main > .about >.text-content >p{
+    color: gray;
+}
+main > .about >.text-content > .text-buttom{
+    margin: 15px 0;
+}
+main > .about >.text-content > button{
+    padding: 15px;
+    border: 1px solid var(--main-color-900);
+    background-color: var(--main-color-900);
+    color: white;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+main > .about >.text-content > button:hover{
+    background-color: transparent;
+    color: var(--main-color-900);
+}
+
+
+main > .mydata{
+    width: 95%;
+    margin: auto;
+    margin: 55px 0;
+}
+main > .mydata > .projectcount{
+
+    width: 100%;
+    text-align: center;
+    padding: 16px 0px;
+}
+main > .mydata > .projectcount > h1{
+    font-size: 40px;
+}
+main > .mydata > .projectcount > p{
+    color: grey;
+}   
+
+main > .service{
+    width: 95%;
+    margin: 10px auto;
+}
+main > .service > h3{
+    color: grey;
+    text-decoration: underline;
+}
+main > .service > h1{
+    font-size: clamp(25px,3vw,50px);
+    margin-top: 15px;
+}
+main > .service > .row{
+    padding: 20px 0;
+}
+main > .service > .row > .card{
+    width: 100%;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 15px 0;
+    padding: 32px;
+}
+main > .service > .row > .card > .content-service > h3{
+    margin: 15px 0;
+}
+main > .service > .row > .card > .content-service > p{
+    margin: 10px 0;
+    color: grey;
+    font-size: 18px;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+main > .client{
+    width: 95%;
+    margin: 10px auto;
+}
+main > .client > h3{
+    color: grey;
+    text-decoration: underline;
+}
+main > .client > h1{
+    font-size: clamp(25px,3vw,50px);
+    margin-top: 15px;
+}
+main > .client > .row{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+main > .client > .row > * {
+    flex: 0 0 auto;          
+}
+main > .client > .row > .card{
+    width: 100% ;
+    border: 1px solid grey;
+    margin: 15px 0;
+    padding: 32px;
+}
+
+main > .client > .row > .card > .content-service > p{
+    margin: 10px 0;
+    margin-top: 20px;
+    color: grey;
+    font-size: 18px;
+    line-height: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+main > .client > .row > .card > .content-service > .image{
+    display: flex;
+    align-items: center;
+}
+main > .client > .row > .card > .content-service > .image >img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    object-fit: cover;
+}
+main > .client > .row > .card > .content-service > .image > .text > h2{
+    font-weight: bold;
+}
+main > .client > .row > .card > .content-service > .image > .text > p{
+    color: grey;
+}
+
+
+
+
+main > .blog{
+    width: 95%;
+    margin: 10px auto;
+}
+main > .blog > h3{
+    color: grey;
+    text-decoration: underline;
+}
+main > .blog > h1{
+    font-size: clamp(25px,3vw,50px);
+    margin-top: 15px;
+}
+main > .blog > .row{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+main > .blog > .row > * {
+    flex: 0 0 auto;          
+}
+main > .blog > .row > .card{
+    width: 100% ;
+    border: 1px solid grey;
+    margin: 15px 0;
+    padding: 25px;
+}
+
+main > .blog > .row > .card > .content-service > .image{
+    width: 100%;
+    height: 220px;
+    background-color: slategray;
+    margin-bottom: 10px;
+}
+main > .blog > .row > .card > .content-service > .image >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+main > .blog > .row > .card > .content-service > .body > h3{
+    margin: 5px 0;
+}
+main > .blog > .row > .card > .content-service > .body > .lotime{
+    display: flex;
+    color: gray;
+}
+main > .blog > .row > .card > .content-service > .body > .lotime > i{
+    margin-right: 3px;
+}
+main > .blog > .row > .card > .content-service > .body > p{
+    color: gray;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+/* --------- Start from Screen Taplate and Ipad -------------- */
+@media (min-width:768px) {
+    main > .hero,
+    main > .about{
+        width: 80%;
+        padding-top: 70px;
+        padding-right: 80px;
+    }
+    main > .about{
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    main > .mydata{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 55px auto;
+    }
+    main > .mydata > .projectcount{
+        width: 50%;
+    }
+
+    /* service */
+    main > .service,
+    main > .client,
+    main > .blog{
+        width: 80%;
+        margin: 10px auto;
+    }
+    main > .service > .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    main > .service > .row > .card,
+    main > .client > .row > .card,
+    main > .blog > .row > .card{
+        width: 48%;
+        margin: 5px;
+    }
+
+}
+
+/* --------- Start from Screen Laptop -------------- */
+@media (min-width:1280px) {
+    main > .hero,
+    main > .about{
+        width: 75%;
+        padding-right: 0px;
+        padding-top: 100px;
+        /* background-color: aqua; */
+    }
+    main > .hero > .title,
+    main > .hero > .image{
+        width: 65%;
+        /* height: 100%; */
+        /* background-color: rebeccapurple; */
+        
+    }
+    main > .hero > .title{
+        padding-right: 0px;
+    }
+    main > .hero > .image{
+        width: 35%;
+        /* height: 300px; */
+        display: block;
+    }
+
+    /* about section */
+    main > .about{
+        padding-top: 0;
+        display: flex;
+    }
+
+    main > .about >.image,
+    main > .about >.text-content{
+        width: 50%;
+        padding-top: 150px;
+    }
+    main >.about >.image{
+        height: 500px;
+    }
+    main > .about >.text-content{
+        /* padding-top: 0px; */
+        /* background-color: green; */
+        padding-left: 30px;
+    }
+    main > .about >.text-content > h1{
+        font-size: 48px;
+    }
+
+    main > .mydata{
+        margin:90px auto;
+    }
+    main > .mydata > .projectcount{
+        width: 25%;
+    }
+
+    /* service */
+    main > .service,
+    main > .client,
+    main > .blog{
+        width: 75%;
+        margin: 180px auto;
+    }
+    main > .service > .row > .card,
+    main > .client > .row > .card,
+    main > .blog > .row > .card{
+        width: 31%;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:1400px) {
+    main > .hero > .title > .text-content > h1{
+        font-size: 140px;
+        margin-bottom: 30px;
+    }
+    main > .hero > .title{
+        padding-right: 220px;
+        padding-top: 130px;
+        
+    }
+}
